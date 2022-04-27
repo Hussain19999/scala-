@@ -1,0 +1,30 @@
+package lecture7
+
+import scala.sys.process.processInternal.File
+
+object Assignment_question_ extends App {
+  val devUrl = "abfss:container@devstorage.dfs.core.windows.net/bronze/".split('.')
+  for(w2<-devUrl){
+      println(w2)
+    devUrl1(w2)
+  }
+  val testUrl = s"abfss:container@teststorage.dfs.core.windows.net/bronze/".split('.')
+  for(x2<-devUrl){
+    println(x2)
+    devUrl1(x2)
+  }
+  val accUrl = s"abfss:container@accstorage.dfs.core.windows.net/bronze/"
+  for(y2<-accUrl){
+    println(y2)
+    devUrl1(y2)
+  }
+  val prodUrl = s"abfss:container@prodstorage.dfs.core.windows.net/bronze/"
+  for(z2<-prodUrl){
+    println(z2)
+    devUrl1(z2)
+  }
+}
+def devUrl1(w2: Unit)=w2
+def testUrl1(x2: Unit)=x2
+def accUrl1(y2: Unit)=y2
+def prodUrl1(z2: Unit)=z2
